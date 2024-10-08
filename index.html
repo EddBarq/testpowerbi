@@ -4,14 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Power BI Embed Test</title>
+    <style>
+        /* Ensure the iframe takes up the full height and width of the page */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        iframe {
+            display: block;
+            border: none;
+            height: 100%;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <h1>Power BI Embedded Report Test</h1>
     <!-- Embed your Power BI report below -->
     <iframe 
         title="TestPublishToWeb"
-        width="600"
-        height="373.5"
         src="https://app.powerbi.com/view?r=eyJrIjoiOGI3OGUxMGMtNzg0Ni00OGFkLTgyY2EtYjUyYjUxODlmNmFhIiwidCI6ImRmNGQ2Y2Y1LWQxMGQtNGY2NS1hODZhLWExNzQwNWExMzlhMiIsImMiOjl9"
         frameborder="0"
         allowFullScreen="true">
